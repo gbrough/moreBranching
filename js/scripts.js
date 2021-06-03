@@ -1,13 +1,23 @@
+
 function getCelebrity(gender, hobbies, genre) {
+  let celebrity = ''
+
   if (gender === "female") {
-    return "Scarlett Johansson"
+    celebrity = "Scarlett Johansson"
   } else if (gender === "male") {
-    return "Robert Downey Jr."
+    celebrity = "Robert Downey Jr."
   } else if (gender === "they") {
-    return "Liv Hewson"
+    celebrity = "Liv Hewson"
+  }
+  if (genre === "sci-fi") {
+    celebrity = celebrity + " or Chris Hemsworth"
+  } else if (genre === "fantasy") {
+    celebrity = celebrity + " or Liv Tyler"
+  } else if (genre === "rom-com") {
+    celebrity = celebrity + " or Chris Klein"
   }
 
-  return 'your celebrity!'
+  return celebrity
 }
 
 $(document).ready(function() {
