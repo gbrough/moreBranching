@@ -7,28 +7,43 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
-  <title>Car insurance</title>
+  <title>Dating Celebrity Match</title>
 </head>
 <body>
   <div class="container">
-    <h1>Car insurance</h1>
+    <h1>Dating Celebrity Match</h1>
 
-    <p>To give you a quote, we need to know a little about you:</p>
+    <p>Are you lonely, figure out which celebrity is right for you</p>
 
     <form id="insurance">
       <label for="age">Age</label>
       <input id="age" type="text">
+      
       <label for="gender">Gender</label>
       <select id="gender">
         <option value="female">Female</option>
         <option value="male">Male</option>
       </select>
 
-      <button type="submit" class="btn">Calculate my quote</button>
+      <label for="genre">Genre</label>
+      <select id="genre">
+        <option value="sci-fi">Sci-Fi</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="rom-com">Romantic Comedy</option>
+      </select>
+
+      <label for="hobbies">Hobbies</label>
+      <select id="hobbies">
+        <option value="reading">Reading</option>
+        <option value="karate">Karate</option>
+        <option value="cars">Cars</option>
+      </select>
+
+      <button type="submit" class="btn btn-primary">Find my Match</button>
     </form>
 
-    <div id="quote">
-      <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+    <div id="result">
+      <p>You have been matched with<span id="person"></span> . Good luck on your first day!</p>
     </div>
   </div>
 </body>
